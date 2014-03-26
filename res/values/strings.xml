@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Twitter DEMO</string>
+    <string name="ok">OK</string>
+    <string name="loading">Loading...</string>
+    <string name="refresh">Next 20</string>
+    <string name="logout">Logout</string>
+
+    <string name="twitterConsumerKey">B1jfaFqCb0x4mU4mn1IISQ</string> 
+    <string name="twitterConsumerSecret">iMzzXYBuY4JEKgcpjUvQgqMmsWzHvVd4wV3OsUGtY</string> 
+
+    <string name="twitterLoginFragment_error">Login unsuccessful. Did you properly type in the PIN number?</string>
+    <string name="twitterLoginFragment_title">Twitter Login</string>
+    <string name="twitterLoginFragment_description">We need to authenticate your information in order to enable access to your Twitter account. Please tap on the following hyperlink and type in the PIN code below: \n\n%1$s</string>
+
+
+</resources>

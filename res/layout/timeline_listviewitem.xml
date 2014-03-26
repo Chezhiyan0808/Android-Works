@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customshape"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/statusItem_userProfilePicture"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/marginSize_normal" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/statusItem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/marginSize_normal"
+        android:text="HH:MM"
+        android:textSize="@dimen/textSize_normal" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/statusItem_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSize_normal"
+        android:layout_toLeftOf="@id/statusItem_time"
+        android:layout_toRightOf="@id/statusItem_userProfilePicture"
+        android:text="User Name goes here"
+        android:textSize="@dimen/textSize_big" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/statusItem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusItem_userName"
+        android:layout_margin="@dimen/marginSize_normal"
+        android:layout_toRightOf="@id/statusItem_userProfilePicture"
+        android:autoLink="web"
+        android:text="User content goes here"
+        android:textSize="@dimen/textSize_normal" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/statusItem_via"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusItem_content"
+        android:layout_margin="@dimen/marginSize_big"
+        android:text="via XXXXX app goes here"
+        android:textSize="@dimen/textSize_normal" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusItem_via" >
+        <TextView
+			android:id="@+id/retweet_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/ic_indicator_retweet"
+			android:drawablePadding="4dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="15dp"
+			android:padding="10dp"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			/>
+
+		<TextView
+			android:id="@+id/replies_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:drawableLeft="@drawable/ic_indicator_reply"
+			android:drawablePadding="4dp"
+			android:visibility="visible"
+			android:gravity="center_vertical"
+			android:padding="10dp"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+</RelativeLayout>
